@@ -4,9 +4,20 @@
     "description": "API for Inventory Web App",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev": "set DEBUG=app:* & nodemon index.js"
     },
     "keywords": [],
     "author": "Brayan Cordova",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "debug": "^4.3.4",
+        "dotenv": "^10.0.0",
+        "excel4node": "^1.8.2",
+        "express": "^4.18.2",
+        "http-errors": "^2.0.0",
+        "mongodb": "^4.1.3"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
 }
